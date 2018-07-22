@@ -1,0 +1,29 @@
+{
+  "name": "miniglob",
+  "version": "0.1.0",
+  "description": "Minimal file globbing without dependencies; port of golang filepath",
+  "main": "miniglob.js",
+  "typings": "miniglob.d.ts",
+  "author": "rsms",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup src/miniglob.js --file miniglob.g.js --format umd --name miniglob --sourcemap && uglifyjs --compress --mangle --ecma 7 -o miniglob.js --source-map content=miniglob.g.js.map,includeSources=false -- miniglob.g.js && node misc/fixup-sourcemap.js miniglob.js.map",
+    "build-w": "rollup src/miniglob.js --file miniglob.g.js --format umd --name miniglob --sourcemap --watch",
+    "test": "node test/test.js",
+    "prepublish": "node test/test.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.63.4",
+    "uglify-es": "^3.3.9"
+  },
+  "homepage": "https://github.com/rsms/js-miniglob#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsms/js-miniglob.git"
+  },
+  "keywords": [
+    "file",
+    "glob",
+    "pattern"
+  ]
+}
