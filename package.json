@@ -18,7 +18,7 @@
     "build": "rollup src/miniglob.js --file miniglob.g.js --format umd --name miniglob --sourcemap && uglifyjs --compress --mangle --ecma 7 -o miniglob.js --source-map content=miniglob.g.js.map,includeSources=false -- miniglob.g.js && node misc/fixup-sourcemap.js miniglob.js.map",
     "build-w": "rollup src/miniglob.js --file miniglob.g.js --format umd --name miniglob --sourcemap --watch",
     "test": "node test/test.js",
-    "prepublish": "node test/test.js"
+    "prepublishOnly": "node test/test.js"
   },
   "devDependencies": {
     "rollup": "^0.63.4",
