@@ -13,7 +13,7 @@ without any dependencies.
 
 ## Usage
 
-```
+```js
 import { glob, match } from 'miniglob'
 console.log(glob('src/**.js'))
 console.log(match("ab[b-d]", "abc"))
