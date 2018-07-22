@@ -19,6 +19,12 @@ console.log(glob('src/**.js'))
 console.log(match("ab[b-d]", "abc"))
 ```
 
+It's [published on npm as `miniglob`](https://www.npmjs.com/package/miniglob)
+
+```txt
+$ npm install miniglob
+```
+
 See [test/test.js](test/test.js) for more examples
 
 
