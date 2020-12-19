@@ -1,6 +1,6 @@
 {
   "name": "miniglob",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Minimal file globbing without dependencies; port of golang filepath",
   "main": "miniglob.js",
   "typings": "miniglob.d.ts",
